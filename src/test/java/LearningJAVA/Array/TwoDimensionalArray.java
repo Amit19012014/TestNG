@@ -36,13 +36,22 @@ public class TwoDimensionalArray { //MultiDimensionalArray
 //        System.out.println(a1[2][1]);
 
         //Read all the data from array
-        for (int i = 0; i <= a1.length-1; i++) {
-            for (int j = 0; j <=a1[i].length-1; j++) {
+        for (int i = 0; i <= a1.length - 1; i++) {
+            for (int j = 0; j <= a1[i].length - 1; j++) {
 
-                System.out.print(a1[i][j]+ " ");
+                System.out.print(a1[i][j] + " ");
             }
             System.out.println();
 
+        }
+
+        System.out.println("================");
+        for (int arr[] : a1) {
+
+            for (int x : arr) {
+                System.out.print(x + " ");
+            }
+            System.out.println(" ");
         }
     }
 }
