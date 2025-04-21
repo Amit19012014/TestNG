@@ -6,41 +6,41 @@ public class TC1 {
 
     @BeforeClass
     void beforeClass(){
-        System.out.println("this will execute before the class");
+        System.out.println("This will execute before the class");
     }
-
     @AfterClass
-    void After(){
-        System.out.println("this will execute after the class");
+    void afterClass(){
+        System.out.println("This will execute after the class");
     }
 
     @BeforeMethod
-    void setup(){
+    void beforeMethod() {
+
         System.out.println("This will execute before every method");
     }
 
     @AfterMethod
-    void tearDown(){
+    void afterMethod() {
         System.out.println("This will execute after every method");
     }
 
     @Test
-    void  test1(){
+    void test1() {
         System.out.println("This is test1");
     }
+
+
     @Test
-    void  test2(){
+    void test2() {
         System.out.println("This is test2");
     }
 
     @BeforeTest
     void beforeTest(){
-        System.out.println("This will execute before the Test");
+        System.out.println("This will execute before test");
     }
-
     @AfterTest
     void afterTest(){
-        System.out.println("This will execute after the Test");
+        System.out.println("This will execute After test");
     }
-
 }
