@@ -1,0 +1,18 @@
+day -9
+
+Example : Reverse a string
+
+String s= "welcome"
+reverse string = emoclew
+
+
+
+
+StringBufffer a =new StringBuffer("welcome");
+StringBuilder a =new StringBuilder("welcome");
+
+=============================================
+ Immutable =  we cannot change. ex = String is a mutable.
+ mutable = we can change.ex = StringBuffer & StringBuilder is immutable
+
+
