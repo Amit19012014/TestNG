@@ -15,4 +15,9 @@ StringBuilder a =new StringBuilder("welcome");
  Immutable =  we cannot change. ex = String is a mutable.
  mutable = we can change.ex = StringBuffer & StringBuilder is immutable
 
+String comparison
+------------------
+1) == equals()
+2) String s = "welcome"
+String s = new String("welcome")
 
