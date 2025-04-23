@@ -1,12 +1,10 @@
-day -9
+Day - 9
+--------------
 
 Example : Reverse a string
 
 String s= "welcome"
 reverse string = emoclew
-
-
-
 
 StringBufffer a =new StringBuffer("welcome");
 StringBuilder a =new StringBuilder("welcome");
@@ -20,4 +18,56 @@ String comparison
 1) == equals()
 2) String s = "welcome"
 String s = new String("welcome")
+
+
+Day - 10
+--------------
+
+OOPs Concepts
+===============
+
+object oriented programming
+----------------------------
+
+Class
+Object
+Polymorphism
+Encapsulation
+Inheritance
+Data Abstraction
+
+
+Class -A class is a collection of attributes and behaviour.
+Class is a blueprint.
+
+Animal(class) --> Dog,Elephant,Horse etc..
+Student(class) --> Kim,David, Scott etc
+Organization(class) --> john ,smith, mary
+
+Object - Object is an instance of a class.
+
+Class
+--------
+1) Class is collection of variables and methods.
+2) class is logical entity/blueprint,
+3) will not occupy space and memory.
+
+Syntax:
+class Employee{
+variables
+methods
+}
+
+Object
+--------
+1) Object is an instance of a class.
+2) Object will be created by using a class.
+3) Object is a physical entity.
+4) occupy space in memory
+5) We can create multiple object for single class.
+
+Employee emp1 = new Employee();
+Employee emp2= new Employee();
+Employee emp3= new Employee();
+
 
