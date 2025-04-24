@@ -1,4 +1,4 @@
-package LearningJAVA.OOpsConcepts;
+package LearningJAVA.OOpsConcepts.ClassAndObjects;
 
 public class Student {
 

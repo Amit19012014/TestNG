@@ -71,3 +71,53 @@ Employee emp2= new Employee();
 Employee emp3= new Employee();
 
 
+Day 11
+-------
+
+Methods
+-------
+Block or group of statements which will perform certain task.
+We have to call the methods through object.
+
+1)No params  || No return value
+2)No Params  || Return Value
+3)Take params|| No return value
+4)Take params|| Return value
+
+String s = new String("welcome")
+int len = s.length() // 2)No Params  || Return Value
+
+String sub = s.substring(2,5)
+
+
+How many ways we can store the data into variables?
+==================================================
+1) using object reference variables
+2) using methods
+3) Using a constructor
+
+Difference b/w method and constructor.
+
+Methods
+------------
+Method:
+1) Method name can be anything
+2) Method may or may not return a value
+3) If method is not returning any value then specify void
+4) Method can take parameters/arguments
+5) We have to invoke/call methods explicitly through object
+6) used for specifying logic
+
+Constructor
+------------
+1) Constructor name should be same as class name.
+2) Constructor will never return a value (not even void)
+3) We don't specify the void
+4) Constructor can take parameters/arguments
+5) Constructor automatically invoked at the time of object creation.
+6) used for initializing the values of the variables.
+
+Types of Constructor
+-------------------
+Default Constructor
+parameterized Constructor

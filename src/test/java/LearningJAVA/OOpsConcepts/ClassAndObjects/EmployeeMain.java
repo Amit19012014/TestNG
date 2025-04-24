@@ -1,4 +1,4 @@
-package LearningJAVA.OOpsConcepts;
+package LearningJAVA.OOpsConcepts.ClassAndObjects;
 
 public class EmployeeMain {
     public static void main(String[] args) {
