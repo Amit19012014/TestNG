@@ -190,3 +190,72 @@ public class MainMathodOverloading {
     }
 }
 
+Usage of this and static keywords in
+=======================================
+this keyword - this keyword is always represents the class and objects
+
+2 Types of variable
+====================
+1) class Variable / instance variable
+2) Local variable
+
+
+static keyword
+----------------
+Static keyword can be applied for variables and methods.
+
+Static variables
+Static methods
+
+Non-Static variables
+Non-Static Methods
+
+1) Static method can access static stuff directly (without object).
+2) Static method can access non-static stuff through the object.
+3) Non-static methods can access everything directly
+
+class Test()
+{
+static String s= "welcome"
+}
+Test.s.length
+
+
+class System()
+{
+static Printstream out;
+}
+System.out.println();
+
+
+JVM
+1)
+public static void main(String [] args ) // valid
+{
+}
+2)
+static public void main(String [] args )  // valid
+{
+}
+3)
+public void static main(String args[]) // Invalid
+{
+}
+4)
+void main (String args[]) public static //Invalid
+{
+}
+5)
+public static void main(int a[]) //valid
+{
+}
+
+static public void main(String a[]) // valid - this is the method jvm look for
+{
+}
+
+
+
+
+
+
