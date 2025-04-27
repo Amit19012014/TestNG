@@ -116,8 +116,77 @@ Constructor
 4) Constructor can take parameters/arguments
 5) Constructor automatically invoked at the time of object creation.
 6) used for initializing the values of the variables.
-
+7. Constructor is use only for assigning the data
 Types of Constructor
 -------------------
 Default Constructor
 parameterized Constructor
+
+Day 12
+-------------
+Polymorphism
+-------------
+Poly - many
+morphism - forms
+
+One thing can have many forms.
+
+shape - circle, square, triangle, rectangle etc;
+water - vapour, ice burgs etc;
+
+We can achieve polymorphism using overloading.
+It is applicable for methods and Constructors
+
+
+Method Overloading
+------------------
+void m1()
+void m1()
+void m1()
+
+4 rules are applicable
+------------------------
+1) Method name should be same
+2) Number of parameter should be different
+3) data type of parameter should be different
+4) Order of parameter should be different
+
+Encapsulation
+----------------
+Wrapping Up of data and methods into single unit(class).
+1) All variable should be private
+2) For every variable there should be 2 methods ( get & set )
+3) Variables can be operated only through methods.
+
+
+
+to set and get the value we will use getter and setter methods.
+(this.variable name)  "this" keyword always represent the class
+In encapsulation we can't access the variable directly. to access the variables we need to use get and set method.
+
+
+
+Can we overload main() method?
+-------------------------------
+Yes we can overload main() method
+public class MainMathodOverloading {
+    void main(int x){
+        System.out.println(x);
+    }
+    void main(String s){
+        System.out.println(s);
+    }
+    void main(String s1,String s2)
+    {
+        System.out.println(s1+s2);
+    }
+
+    public static void main(String[] args) {
+
+        MainMathodOverloading mo = new MainMathodOverloading();
+        mo.main(100);
+        mo.main("Amit");
+        mo.main("Amit ","Singh");
+    }
+}
+

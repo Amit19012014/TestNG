@@ -1,4 +1,4 @@
-package LearningJAVA.OOpsConcepts.Constructor;
+package LearningJAVA.OOpsConcepts._03Constructor;
 
 public class ConstructorDemo {
 

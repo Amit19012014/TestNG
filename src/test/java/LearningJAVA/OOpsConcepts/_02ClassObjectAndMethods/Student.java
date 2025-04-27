@@ -1,4 +1,4 @@
-package LearningJAVA.OOpsConcepts.ClassObjectAndMethods;
+package LearningJAVA.OOpsConcepts._02ClassObjectAndMethods;
 
 public class Student {
     int sid;

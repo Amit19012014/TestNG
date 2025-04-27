@@ -1,4 +1,4 @@
-package LearningJAVA.OOpsConcepts.ClassAndObjects;
+package LearningJAVA.OOpsConcepts._01ClassAndObjects;
 
 public class Employee {
 
