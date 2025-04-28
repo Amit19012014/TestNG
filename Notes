@@ -254,6 +254,33 @@ static public void main(String a[]) // valid - this is the method jvm look for
 {
 }
 
+Day 14
+========
+
+Inheritance and Types of Inheritance
+====================================
+
+Inheritance
+--------------
+
+Acquiring all the properties (variables) & behaviours(methods) from one class to another class is called Inheritance.
+By using Extend keyword.
+
+Objective
+----------
+1)Re-usability
+2) Avoid duplication
+
+Types of Inheritance
+--------------------
+1) Single
+2) multi level
+3) hierarchy
+4) multiple
+
+
+
+
 
 
 
