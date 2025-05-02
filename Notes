@@ -31,10 +31,10 @@ object oriented programming
 
 Class
 Object
-Polymorphism
-Encapsulation
-Inheritance
-Data Abstraction
+Polymorphism ----> Overloading
+Encapsulation -----> setters and getters
+Inheritance ---> overriding
+Data Abstraction ----> interface , abstract class
 
 
 Class -A class is a collection of attributes and behaviour.
@@ -277,6 +277,7 @@ Types of Inheritance
 2) multi level
 3) hierarchy
 4) multiple
+5) Hybrid ( combination of hierarchy and multiple inheritance)
 
 
 Day 15
@@ -311,13 +312,81 @@ Super Keyword
 1) super keyword will be used to invoke the immediate parent class variable
 2) super keyword wil be used to invoke the immediate parent class method.
 
+Day 16
+=========
+Data Abstraction | Interface Concept
+======================================
+
+
+Data Abstraction (hidden)
+=================
+Abstraction is a process of hiding the implementation details and showing only functionality to the user.
+
+We can achieve abstraction by using both
+1) Abstract class
+2) Interface
 
 
 
+Interface
+1) An interface is a blue print of class.
+2) Interface contains final & Static variables. (By default var will be static and final)
+3) Interface contains abstract methods.( also allowed default methods & Static methods from java8 onwards)
+4) An abstract method is a method contains signature but not body(Un-implemented method).
+5) Methods in interface are public.
+6) Interface supports the functionality of multiple inheritance.
+7) We can define interface with interface keyword.
+8) A class extends another class, an interface extends another interface but a class implements an interface.
+9) We can create Object reference for Interface but we cannot instantiate interface.
 
+whenever we are trying to implement abstract method you have to specify public keyword (in class methods)
 
+class Test{
+void m(){ // default access modifier will be allocated
+var
+methods
+}
+}
 
+interface Test{
+//Interface contains final & Static variables. (By default var will be static and final)
+var
+methods
+}
 
+method in interface
+-------------------
+interface Test
+{
+void m(); // An abstract method is a method contains signature but not body(Un-implemented method).
+}
 
+Abstract class
+==============
+1) Abstract class can have abstract and non-abstract methods.
+2) Abstract class doesn't support multiple inheritance.
+3) Abstract class can have final, non-final, static and non-static variables.
+4) Abstract class can provide the implementation of interface.
+5) The abstract keyword is used to declare abstract class.
+6) An abstract class can extend another Java class and implement multiple Java interfaces.
+7) An abstract class can be extended using keyword "extends".
+8) A Java abstract class can have class members like private,protected, etc.
+9)Example:
+public abstract class Shape(
+public abstract void draw();
+}
 
-
+Interface
+==========
+1) Interface can have only abstract methods. Since Java 8, it can have default and static methods also.
+2) Interface supports multiple inheritance.
+3) Interface has only static and final variables.
+4) Interface can't provide the implementation of abstract class.
+5) The interface keyword is used to declare interface.
+6) An interface can extend another Java interface only.
+7) An interface can be implemented using keyword "implements".
+8) Members of a Java interface are public by default.
+9)  Example:
+public interface Drawable(
+void draw();
+}
