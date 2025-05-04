@@ -1,4 +1,4 @@
-package LearningJAVA.OOpsConcepts.DataAbstractionAndInterfaceConcept;
+package LearningJAVA.OOpsConcepts._09DataAbstractionAndInterfaceConcept;
 
 interface shape {
     int length = 11; // final and static variable

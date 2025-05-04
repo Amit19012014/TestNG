@@ -1,4 +1,4 @@
-package LearningJAVA.OOpsConcepts.DataAbstractionAndInterfaceConcept.MultipleInheritanceAndHybridInheritance;
+package LearningJAVA.OOpsConcepts._09DataAbstractionAndInterfaceConcept.MultipleInheritanceAndHybridInheritance;
 
 public class C2 {
 

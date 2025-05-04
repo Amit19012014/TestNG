@@ -1,4 +1,4 @@
-package LearningJAVA.OOpsConcepts.DataAbstractionAndInterfaceConcept.MultipleInheritanceAndHybridInheritance;
+package LearningJAVA.OOpsConcepts._09DataAbstractionAndInterfaceConcept.MultipleInheritanceAndHybridInheritance;
 
 public class C1 extends C2 implements I1, I2 {
 

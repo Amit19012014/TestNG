@@ -312,6 +312,7 @@ Super Keyword
 1) super keyword will be used to invoke the immediate parent class variable
 2) super keyword wil be used to invoke the immediate parent class method.
 
+
 Day 16
 =========
 Data Abstraction | Interface Concept
@@ -390,3 +391,72 @@ Interface
 public interface Drawable(
 void draw();
 }
+
+Day 17
+=========
+Wrapper Classes | Data Conversion | Packages | Access Modifiers
+===============================================================
+
+Wrapper Classes
+===============
+
+
+int - Integer
+float - Float
+double - Double
+char - Character
+boolean - Boolean
+
+
+String price1 = "150.50";
+String price2 = "120.50";
+
+price1+price2 here it will be concatenation not addition bcoz it is a string
+
+Scenario 1  = String ==> int,double,boolean
+
+
+1) String ----> int  Integer.parseInt(String value)
+2) String ----> double Double.parseDouble(String value)
+3) String ----> boolean Boolean.parseBoolean(String value)
+4) String -----> char Not possible
+
+Scenario 2  = int,double,boolean,char ==> String
+
+Any data type ----> String
+String.valueOf() --> Covert all premitive data type into string format.
+
+
+
+String s = "welcome";
+String s = new String("welcome");
+
+Note - String is not a wrapper class.
+
+
+int x = 100;
+integer i = new integer(100);
+
+
+ArrayList arr = new ArrayList(); it can accept all type of data
+ArrayList <Integer> = arr new ArrayList<Integer>(); // Valid
+ArrayList <int> = arr new ArrayList<int>(); //Invalid
+
+
+Packages & access modifiers
+===========================
+
+Project => Packages (Folders) ==> Classes (files)
+
+built in package
+user defined package
+
+access modifiers
+=================
+
+access modifiers defined scope of variable and methods.
+
+1)public - Directly access all variables and methods
+2)protected -accessible outside of package through inheritance
+3)default - Access only within the package(no need to write default keyword)
+4)private - Access only within the class
