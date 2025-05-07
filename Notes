@@ -460,3 +460,122 @@ access modifiers defined scope of variable and methods.
 2)protected -accessible outside of package through inheritance
 3)default - Access only within the package(no need to write default keyword)
 4)private - Access only within the class
+
+Day 18
+=========
+Exception Handling in Java | Try..Catch..Finally Blocks
+========================================================
+
+Exception Handling
+==================
+Exception is an event which will cause program termination.
+it comes bcoz of user's mistake.
+
+
+
+Error
+-----
+1) Syntax
+2) logical
+
+Type of exceptions
+==================
+
+1) Checked exceptions
+The exceptions which are identified by java compiler.
+Ex: InterruptedException
+    FileNotFound
+    IOException etc...
+
+
+2) Un-checked Exceptions
+The exceptions which are not identified by java compiler.
+Ex:
+ArithmeticException
+NullPointerException
+ArrayIndexOutOfBoundsException etc...
+
+
+
+try
+{
+statement
+}
+catch(ArithmeticException e)
+{
+sout("any message");
+}
+
+ try {
+            System.out.println(s.length());
+        }catch (Exception e){
+            System.out.println("handled Exception");
+            System.out.println(e.getMessage());
+        }
+
+Here Exception e will handle all type of exception bcoz it is a parent class of exception.
+
+
+try
+{
+statement
+}
+catch()
+{
+} finally
+{
+}
+
+case1: Exception occurred, catch block handled ---> finally block will execute
+case2: Exception occurred, catch block NOT handled --> finally block will execute
+case3: Exception does not occurred, catch block ignored ----> finally block will execute
+
+
+
+checked exception can be handled in 2 ways
+----------------------
+
+throws
+
+
+Day 19
+=========
+ Type Casting in Java | Up Casting & Down Casting in Java
+ =========================================================
+
+ Type Casting -
+ ============
+ Converting type of data.
+
+ types
+ ------
+ 1) Upcasting / widening
+ 2) Down-casting / Narrowing
+
+Child c = new Child();
+
+Parent p = new Child();
+
+
+Day 20
+=========
+Collections in Java | ArrayList | HashSet | HashMap
+===================================================
+
+        Collection(I)
+
+      List(I)     Set(I)
+
+ ArrayList(C)     HashSet(C)
+
+======================================
+   MAP(I)
+
+
+ HashMap(C)
+
+
+ Name : mobile
+ x    : 12345
+ y    : 67890
+ z    : 75315
