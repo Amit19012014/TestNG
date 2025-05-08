@@ -579,3 +579,37 @@ Collections in Java | ArrayList | HashSet | HashMap
  x    : 12345
  y    : 67890
  z    : 75315
+
+Collections
+============
+
+"Collection" is to present group of element/objects/data into single entity.
+"Collection" is an Interface available in java.util
+
+ ArrayList
+ ===========
+ ArrayList - it is class which is implemented List Interface
+
+ 1) Heterogeneous data - allowed
+ 2) Insertion order - preserved(Index)
+ 3) Duplicate elements -- allowed
+ 3) multiple nulls - allowed
+
+HashSet
+=========
+
+HashSet - a class implemented Set interface I
+1) Heterogeneous data ---> allowed
+2) Insertion order --> Not preserved (Index not supported)
+3) Duplicate elements --> Not Allowed
+4) Multiple nulls Not allowed/ only single null is allowed
+
+HashMap
+========
+
+HashMap is a class implemented Map interface
+
+1) Data can be stored in the form of key, value pairs.
+2) Key is unique. But we can have duplicate values.
+3) Insertion order not preserved (Index not followed)
+
