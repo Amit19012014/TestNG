@@ -203,6 +203,10 @@ this keyword - this keyword is always represents the class and objects
 static keyword
 ----------------
 Static keyword can be applied for variables and methods.
+In Java, static keyword is mainly used for memory management.
+It can be used with variables, methods, blocks and nested classes.
+It is a keyword which is used to share the same variable or method of a given class.
+Basically, static is used for a constant variable or a method that is same for every instance of a class.
 
 Static variables
 Static methods
