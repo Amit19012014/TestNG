@@ -1,0 +1,101 @@
+Day 21
+-------
+
+Selenium WebDriver
+====================
+
+1) WebDriver is one of the component in selenium.
+2) webDriver is a java Interface
+3) WebDriver is an API (Application Programming Interface)
+
+WebDriver (I)---->  RemoteWebDriver (C)----> ChromeDriver , FirefoxDriver , EdgeDriver etc.....
+
+
+Day 22
+---------
+
+Locators (ID,Name,LinkText,PartialLinkText,Class&Tag)
+====================================================
+
+We can identify various elements on the web using Locators
+Locators are addresses that identify a web element uniquely within the page
+
+Locators
+=========
+ID,
+Name,
+LinkText, - we need to write full text
+PartialLinkText - write Partial text
+Class&Tag - use to collect group of element
+
+Customized Locators
+====================
+CSS Selector
+-------------
+Tag and ID
+Tag and class
+Tag and attribute
+Tag class and attribute
+
+Xpath
+-------------
+Absolute xpath
+Relative xpath
+
+driver.findelement(By.id("")).click()
+
+findElement() - will return single Webelement
+findElements() - will return multiple Webelements
+
+
+Scenario 1 : Locator matching with single web element
+
+findElement(loc) ---> single web element --- Web-element
+findElements(loc) ----> single web element List<WebElement>
+
+Scenario 2 : Locator matching with multiple web elements
+findElement(loc) ---> single web element --- Web-element
+findElements(loc) ----> multiple web element List<WebElement>
+
+Scenario 3 : Locator is not matching with any web elements
+findElement(loc) ---> NoSuchElementException
+findElements(loc) ----> return 0. because List<WebElement> will not find any element so it is 0. Empty list will be created.
+
+
+Day 23
+---------
+Locators - CSS Selector
+=======================
+
+CSS - Cascading Style Sheets
+
+tag id                        tag#id
+tag class                     tag.class_name
+tag attribute                 tag[attribute = "value"]
+tag class attribute           tag.class_name[attribute = "value"]
+
+
+
+Day 24
+---------
+(XML Language)
+
+Locators -  XPath | XPath Functions | XPath
+============================================
+Xpath is an address of the element
+DOM - Document object model
+
+type of
+=============
+1)absolute Xpath (Full Xpath)
+
+    Ex- /html/body/div[6]/div[1]/div[2]/div[2]/form/button
+
+2)relative Xpath (Partial Xpath)
+
+    Ex -//*[@id="small-search-box-form"]/button
+
+
+
+
+
