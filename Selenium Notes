@@ -89,13 +89,117 @@ type of
 =============
 1)absolute Xpath (Full Xpath)
 
-    Ex- /html/body/div[6]/div[1]/div[2]/div[2]/form/button
+    Ex: /html/body/div[6]/div[1]/div[2]/div[2]/form/button
 
 2)relative Xpath (Partial Xpath)
 
-    Ex -//*[@id="small-search-box-form"]/button
+    Ex: //*[@id="small-search-box-form"]/button
+
+Which Xpath will be preferred?
+Relative Xpath
+
+Difference B/W Absolute & Relative Xpath
+-----------------------------------------
+
+Difference between Absolute & Relative Xpaths?
+1) Absolute xpath starts with / ---> represents root node
+   Relative xpath starts with //
+
+2) Absolute xpath do not use attributes
+   Relative xpath works with attribute
+
+3) Absolute xpath traverse through each node till it finds element
+   Relative xpath directly jump and find the element by using attribute
+
+Relative Xpath (Partial Xpath)
+--------------------------------
+
+1)Automatically ( By Dev tools, selector hub)
+2)Manually (OWN Xpath)
+
+Syntax
+---------
+//tagname[@attribute='value']
+//*[@attribute='value']
+
+
+Example 1
+---------
+//img[@title='MacBook']
+//*[@title='MacBook']
+
+//*[@title=/"MacBook"/]
 
 
 
+//Xpath with single Attribute
+-----------------------------
+driver.findElement(By.xpath("//input[@placeholder='Search']")).sendKeys("Amit");
+
+//Xpath with multiple Attribute
+-------------------------------
+driver.findElement(By.xpath("//input[@name='search'][@placeholder='Search']")).sendKeys("Amit");
+
+Xpath with 'and' & 'or' operators
+------------------------------
+//input[@name='search' and @placeholder='Search']
+//input[@name='search' or @placeholder='Search']
+
+Xpath with inner text ---text()
+-------------------------------
+Syntax
+//tagname[text() ='innerText']
+
+//a[text()='Desktop'];
+//a[text()='MacBook'];
+
+<a href="https://xyz.com"> Click me </a>
+
+linktext  - yes
+innertext - yes
+
+<div>welcome</div>
+
+linktext  - no
+innertext - yes
+
+Xpath with Contains()
+=====================
+it will check the keyword anywhere on the webpage
+//input[contains(.,'Sea')] here (.) is  text() method
+//input[contains(@placeholder,'Sea')]
+
+Xpath with start-with()
+=======================
+it will check the keyword from the starting.
+//input[starts-with(@placeholder,'Sea')]
+
+Handling Dynamic attributes
+============================
+
+//*[@id='start' or @id='stop']
+//*[contains(@id,'st')]
+//*[starts-with(@id,'st')]
 
 
+name = xyz001 xyz002  xyz003 xyz004
+//*[contains(@name,'xyz')]
+//*[starts-with(@name,'xyz')]
+
+//*[contains(@name,'00')]
+
+name = 1xyz 2xyz 3xyz 4xyz 5xyz
+
+//*[contains(@name,'xyz')]
+
+name = 101xyz 201xyz 301xyz 401xyz
+
+//*[contains(@name,'xyz')]
+
+Chained Xpath
+==============
+the combination of absolute and relative Xpath is called chained Xpath
+
+Example :
+
+//div[@class='col-sm-4']/div/h1/a[contains(text(),'Your Store')]
