@@ -1,10 +1,12 @@
 package Selenium.HandlingFramesIframesandNestedIframes;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import java.lang.reflect.Method;
 import java.time.Duration;
 import java.util.List;
 
@@ -34,24 +36,35 @@ public class HandlingFrame {
         driver.switchTo().frame(frame3);
         driver.findElement(By.xpath("//input[@name='mytext3']")).sendKeys("Frame 3");
 
-        WebElement iframe1 = driver.findElement(By.xpath("//iframe[@src='https://docs.google.com/forms/d/1yfUq-GO9BEssafd6TvHhf0D6QLDVG3q5InwNE2FFFFQ/viewform?embedded=true']"));
-        driver.switchTo().frame(iframe1);
-        driver.findElement(By.xpath("//div[@class='AB7Lab Id5V1'][1]")).click();
+//        Method 1
+//        WebElement iframe1 = driver.findElement(By.xpath("//iframe[@src='https://docs.google.com/forms/d/1yfUq-GO9BEssafd6TvHhf0D6QLDVG3q5InwNE2FFFFQ/viewform?embedded=true']"));
+//        driver.switchTo().frame(iframe1);
+//        driver.findElement(By.xpath("(//div[@class='AB7Lab Id5V1'])[2]")).click();
+//        List<WebElement> checkboxes = driver.findElements(By.xpath("//div[@class='uHMk6b fsHoPb']"));
+//        for (WebElement checkbox : checkboxes) {
+//            checkbox.click();
+//        }
+
+
+//        Method 2
+
+        driver.switchTo().frame(0); //switching to frame using index
+        // click on radio button using normal method
+//       driver.findElement(By.xpath("(//div[@class='AB7Lab Id5V1'])[2]")).click();
+
+        // click on radio button using js executor
+        WebElement rdbutton = driver.findElement(By.xpath("(//div[@class='AB7Lab Id5V1'])[2]"));
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].click();", rdbutton);
+
+
         List<WebElement> checkboxes = driver.findElements(By.xpath("//div[@class='uHMk6b fsHoPb']"));
         for (WebElement checkbox : checkboxes) {
             checkbox.click();
         }
 
+
         driver.switchTo().defaultContent();// go back to the page
-
-
-
-
-
-
-
-
-
 
 
         //Frame 4
