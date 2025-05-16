@@ -443,3 +443,85 @@ fluent wait
        return driver.findElement(By.id("foo"));
      }
    });
+
+
+
+Day 28
+==========
+WebDriver Methods | Browser & Navigation Commands
+==================================================
+
+
+Navigation Commands
+====================
+
+navigate().to(url)
+navigate().back()
+navigate().forward()
+navigate().refresh()
+
+
+driver.get() -->  Accepts URL only in the String format.
+driver.navigate().to(myURL); --> Accept only URL in the String format & URl Object format.
+
+
+getWindowHandle()
+getWindowHandles()
+
+driver.switchTo().window(windowID);
+
+
+Assignment
+https://testautomation practice.blogspot.com/
+1) provide some string search for it 2) count number of links
+3) click on each link using for loop
+4) get window ID's for every browser window 5) close specific browser window
+
+Day 29
+==========
+
+Session 29 - Selenium with Java | Handling Check Boxes, Different Types of Alerts
+===================================================================================
+
+Checkboxes
+
+Alerts/popups
+-------------
+ Alert myalert = driver.switchTo().alert();
+
+driver.switchTo().alert().accept();
+driver.switchTo().alert().accept(); // close alert button using ok button
+driver.switchTo().alert().dismiss();// close alert button using cancel button
+driver.switchTo().alert().getText();
+driver.switchTo().alert().sendKeys("Amit") // to send the text in prompt.
+
+Authenticated popup
+-------------------
+https://the-internet.herokuapp.com/basic_auth
+
+Syntax:
+http://username:password@the-internet.herokuapp.com/basic_auth
+Example :
+http://admin:admin@the-internet.herokuapp.com/basic_auth
+
+
+Day-30
+-------
+
+frames/iframes
+--------------
+Syntax:
+driver.switchTo().frame(parameter) - parameter can be id ,name and webElement
+
+Testing Website:
+https://ui.vision/demo/webtest/frames/
+
+driver.switchTo().frame(name) - parameter can be id ,name and webElement
+driver.switchTo().frame(id)
+driver.switchTo().frame(WebElement)
+driver.switchTo().frame(Index)
+
+Command: to come out the frame
+
+driver.switchTo().defaultContent();
+
