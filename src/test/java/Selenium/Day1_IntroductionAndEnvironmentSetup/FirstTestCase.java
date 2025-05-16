@@ -1,6 +1,5 @@
-package Selenium.Introduction_EnvironmentSetup;
+package Selenium.Day1_IntroductionAndEnvironmentSetup;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 

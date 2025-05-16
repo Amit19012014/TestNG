@@ -615,5 +615,5 @@ HashMap is a class implemented Map interface
 
 1) Data can be stored in the form of key, value pairs.
 2) Key is unique. But we can have duplicate values.
-3) Insertion order not preserved (Index not followed)
+3) Insertion order not preserved (Index not followed).
 

@@ -1,10 +1,8 @@
-package Selenium.Locators;
+package Selenium.Day2_Locators;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-
-import java.util.List;
 
 public class XpathDemo {
     public static void main(String[] args) {
@@ -49,6 +47,8 @@ public class XpathDemo {
 
         Boolean DisplayStatus = driver.findElement(By.xpath("//div[@class='col-sm-4']/div/h1/a[contains(text(),'Your Store')]")).isDisplayed();
         System.out.println(DisplayStatus);
+
+        driver.quit();
 
     }
 }
