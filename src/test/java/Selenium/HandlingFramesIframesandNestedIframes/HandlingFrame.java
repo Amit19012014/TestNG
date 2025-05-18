@@ -73,10 +73,16 @@ public class HandlingFrame {
         driver.findElement(By.xpath("//input[@name='mytext4']")).sendKeys("Frame 4");
         driver.switchTo().defaultContent();// go back to the page
 
+
+
         //Frame 5
         WebElement frame5 = driver.findElement(By.xpath("//frame[@src='frame_5.html']"));
         driver.switchTo().frame(frame5);
         driver.findElement(By.xpath("//input[@name='mytext5']")).sendKeys("Frame 5");
+        driver.findElement(By.xpath("//a[contains(text(),'https://a9t9.com')]")).click();
+        WebElement logo = driver.findElement(By.xpath("//a[@id='logo']"));
+        System.out.println(logo.isDisplayed());
+        logo.click();
         driver.switchTo().defaultContent();// go back to the page
 
     }

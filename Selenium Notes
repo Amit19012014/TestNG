@@ -506,10 +506,10 @@ http://admin:admin@the-internet.herokuapp.com/basic_auth
 
 
 Day-30
--------
+========
 
 frames/iframes
---------------
+================
 Syntax:
 driver.switchTo().frame(parameter) - parameter can be id ,name and webElement
 
@@ -524,4 +524,69 @@ driver.switchTo().frame(Index)
 Command: to come out the frame
 
 driver.switchTo().defaultContent();
+
+
+3 types of switching methods
+
+1) browser windows
+        driver.switch To().window(windowID/window handle)
+
+2) alerts
+    driver.switchTo().alert()
+    driver.switchTo().accept()
+    driver.switchTo().dismiss()
+
+3) frames
+    driver.switchTo().frame(id);
+    driver.switchTo().frame(name);
+    driver.switchTo().frame(WebElement);
+
+
+Day 31
+========
+Handling Different Types of Drop-downs
+======================================
+
+Dropdown box
+------------
+1) select dropdown
+2) Bootstrap dropdown
+3) hidden dropdown
+
+1) select dropdown
+-------------------
+select
+
+selectByVisibleText()
+selectByValue()
+selectByIndex()
+
+getOptions() -- return all the options from the dropdown as a Webelement.
+
+ex :  List<WebElement> Options = drpCountry.getOptions();
+
+
+2) Bootstrap dropdown
+--------------------------
+It will be handled by xpath
+
+3) hidden dropdown
+-------------------------
+To handle the hidden dropdown we need to go to in dev tools on page then event Listeners then delete the "Blur" from that dropdown which is hidden
+inspect the page=>dev tools=> event Listeners=>delete the "Blur"
+
+
+Assignment
+1) Handle country dropdown with/without using Select class:
+https://phppot.com/demo/jquery-dependent-dropdown-list-countries-and-states/
+a) count total number of options
+b) print all the options
+c) select one option
+
+2) Hidden dropdown
+Login to OrangeHRM--> pim--> employee status
+
+3) https://testautomationpractice.blogspot.com/
+colors mult select box
+
 
