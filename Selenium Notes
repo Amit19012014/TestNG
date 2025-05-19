@@ -556,6 +556,10 @@ Dropdown box
 1) select dropdown
 -------------------
 select
+ex: first convert into select tag
+       WebElement fromport = driver.findElement(By.xpath("//select[@name='fromPort']"));
+       Select select = new Select(fromport);
+       select.selectByVisibleText("Portland");
 
 selectByVisibleText()
 selectByValue()
@@ -592,7 +596,26 @@ colors mult select box
 
 Day 32
 =========
-Handling Auto-suggest Dropdown & Static
-=========================================
+Handling Auto-suggest Dropdown & Static Web Tables
+==================================================
+
+Web Tables
+------------
+1) Static web tables
+2) dynamic web tables
+3) table with pagination
+
+https://testautomationpractice.blogspot.com/
+https://opensource-demo.orangehrmlive.com/web/index.php/admin/viewSystemUsers
+
+Assignment:
+
+1) htpps://blazedemo.com/
+
+
+
+
+
+
 
 
