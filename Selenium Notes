@@ -613,6 +613,26 @@ Assignment:
 1) htpps://blazedemo.com/
 
 
+Day 33
+==========
+Handling Dynamic Pagination Web Table
+======================================
+
+How to get no of pages : throw this text
+
+
+String s = "Showing 1 to 20 of 1456 (73 Pages)"
+
+s.indexOf("(")+1
+s.indexOf("Pages")-1
+
+s.subString(s.indexOf("(")+1,s.indexOf("Pages")-1) -->> 1909.
+to get the string into number
+int Pages = Integer.parseInt(s.substring(s.indexOf("(")+1,s.indexOf("Pages")-1));
+
+
+
+
 
 
 
