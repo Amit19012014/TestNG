@@ -631,6 +631,14 @@ to get the string into number
 int Pages = Integer.parseInt(s.substring(s.indexOf("(")+1,s.indexOf("Pages")-1));
 
 
+Day 34
+========
+Handling Date Pickers
+=====================
+
+
+
+
 
 
 
