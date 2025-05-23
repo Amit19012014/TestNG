@@ -71,6 +71,7 @@ public class DatePickerDemo {
 
         Thread.sleep(5000);
         driver.quit();
+
     }
 
 }

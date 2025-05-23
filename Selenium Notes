@@ -651,6 +651,66 @@ https://dummy-tickets.com/buyticket
 2) https://www.dummyticket.com/dummy-ticket-for-visa-application/1
 
 
+Day 35
+========
+Mouse Action || Action vs Actions
+=================================
+Mouse hover : moveToElement(element)
+right click : contextClick(element)
+double click : doubleClick(element)
+drag and drop :
+
+
+Actions (class) - pre defined class provided in selenium
+-------------
+https://demo.opencart.com.gr/
+
+
+build() - create an action
+perform() - complete an action
+
+Actions actions = new Actions(driver);
+
+Mouse hover : moveToElement(element) :
+-----------------------------------
+Ex-actions.moveToElement(Desktops).moveToElement(Mac).click().build().perform();
+
+right click : contextClick(element) :
+------------------------------------
+Ex-actions.contextClick(rightClick).perform();
+
+double click : doubleClick(element) :
+------------------------------------
+Ex - action.doubleClick(button).build().perform();
+
+
+
+getText() Vs getAttribute("attribute_Value")
+-----------------------------------------------
+
+<input id ="xyz"> Welcome </input>
+getText() --> returns the inner text ---- Welcome
+getAttribute("id") --- return the value of attribute -> xyz
+
+
+<input value ="welcome"></input>
+getAttribute("value") --> Welcome
+
+Actions vs Action
+===================
+
+Actions - it is a class, will be used to perform mouse actions
+Action -it is an interface , will be used to store created actions.
+
+
+Assignment :
+1 - Drag & Drop
+https://testautomationpractice.blogspot.com/
+
+
+
+
+
 
 
 
