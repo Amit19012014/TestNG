@@ -655,6 +655,9 @@ Day 35
 ========
 Mouse Action || Action vs Actions
 =================================
+
+
+
 Mouse hover : moveToElement(element)
 right click : contextClick(element)
 double click : doubleClick(element)
@@ -706,6 +709,28 @@ Action -it is an interface , will be used to store created actions.
 Assignment :
 1 - Drag & Drop
 https://testautomationpractice.blogspot.com/
+
+
+Day 36
+========
+Keyboard Actions | Sliders | Tabs & Windows
+==========================================
+Slider :
+---------------
+dragAndDropBy(Element,x,y)
+
+Keyboard Action using Actions class
+------------------------------------
+keyDown()
+keyUp()
+
+EX : crtl+shift+A
+actions.keyDown(Keys.CONTROL).keyDown(Keys,SHIFT).sendKeys("A").keyUP(Keys.SHIFT).keyUp(Keys.CONTROL).perform();
+
+Ex- Enter
+actions.keyDown(keys.ENTER).KeyUp(keys.ENTER).perform();
+
+
 
 
 
