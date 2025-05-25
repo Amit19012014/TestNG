@@ -715,6 +715,8 @@ Day 36
 ========
 Keyboard Actions | Sliders | Tabs & Windows
 ==========================================
+
+
 Slider :
 ---------------
 dragAndDropBy(Element,x,y)
@@ -731,9 +733,124 @@ Ex- Enter
 actions.keyDown(keys.ENTER).KeyUp(keys.ENTER).perform();
 
 
+Day 37
+========
+JavascriptExecutor |Scrolling Pages|Upload Files
+=================================================
 
 
+JavascriptExecutor
+--------------------
 
+JavascriptExecutor is an Interface which is implemented by RemoteWebDriver class.
+----------------
+executeScript() :- we can execute javascript statements.
+
+senKeys() - js.executeScript("arguments[0].setAttribute('value','John')",inputbox);
+click() - js.executeScript("arguments[0].click()",radiobtn);
+
+(element intercepted exception)
+
+TypeCasting: JavascriptExecutor js = (JavascriptExecutor) driver;
+
+
+Scrolling :
+===================
+
+JavascriptExecutor js = (JavascriptExecutor) driver;
+
+1 -Scroll down the page by pixel number.
+----------------------------------------
+js.executeScript("window.scrollBy(0,1500)","");
+System.out.println(js.executeScript("return window.pageYOffset;"));
+
+2 Scroll the page till element is visible
+------------------------------------------
+WebElement element = driver.findElement(By.xpath("//strong[contains(text(),'Community poll')]"));
+js.executeScript("arguments[0].scrollIntoView();",element);
+System.out.println(js.executeScript("return window.pageYOffset;"));
+
+3 Scroll page till end of the page
+----------------------------------
+js.executeScript("window.scrollBy(0,document.body.scrollHeight)");
+System.out.println(js.executeScript("return window.pageYOffset;"));
+
+4 Scrolling up to initial position
+--------------------------------------
+js.executeScript("window.scrollBy(0,-document.body.scrollHeight)");
+System.out.println(js.executeScript("return window.pageYOffset;"));
+
+To handle the horizontal scroll -
+-----------------------------------
+we need to change - pageYOffset to pageXOffset
+document.body.scrollHeight to document.body.scrollWidth
+
+
+Zoom In and Zoom Out
+======================
+JavascriptExecutor js = (JavascriptExecutor) driver;
+js.executeScript("document.body.style.zoom='50%'"); //set zoom level 50 %
+Thread.sleep(5000);
+js.executeScript("document.body.style.zoom='80%'"); //set zoom level 80 %
+
+
+Upload the files
+=================
+
+single file upload
+==================
+driver.findElement(By.xpath("//input[@id='filesToUpload']")).sendKeys("C:\\Users\\amit1\\OneDrive\\Desktop\\Project\\Viva Solution.pdf");
+
+multiple file upload - By using "\n" ex- (file1+"\n"+file2)
+===================
+String file1 = "C:\\Users\\amit1\\OneDrive\\Desktop\\Project\\Viva Solution.pdf";
+String file2 = "C:\\Users\\amit1\\OneDrive\\Desktop\\Project\\Viva Solution1.pdf";
+
+driver.findElement(By.xpath("//input[@id='filesToUpload']")).sendKeys(file1+"\n"+file2);
+
+Day 38
+========
+Screenshots, Headless, SSL, Ad Block, Extensions
+=================================================
+
+How to capture Screenshot
+=========================
+TakesScreenshot ts = (TakesScreenshot) driver;
+
+(1)full page
+=================
+File sourceFile = ts.getScreenshotAs(OutputType.FILE);
+File targetFile = new File("C:\\Users\\amit1\\OneDrive\\Desktop\\Java\\TestNG\\src\\test\\java\\Selenium\\Screenshots_Headless_SSL_AdBlock_Extensions\\ScreenShot\\fullpage.png");
+sourceFile.renameTo(targetFile); //Copy sourceFile to TargetFile
+
+
+in source file screenshot will be take.in target file we will copy the sourceFile
+
+(2)specific area of page
+========================
+WebElement featureProduct =driver.findElement(By.xpath("//div[@class=\"product-grid home-page-product-grid\"]"));
+File sourceFile =  featureProduct.getScreenshotAs(OutputType.FILE);
+File targetFile = new File("C:\\Users\\amit1\\OneDrive\\Desktop\\Java\\TestNG\\src\\test\\java\\Selenium\\Screenshots_Headless_SSL_AdBlock_Extensions\\ScreenShot\\featureProduct.png");
+sourceFile.renameTo(targetFile); //Copy sourcefile to Targetfile
+
+(3)Web element
+==============
+WebElement logo = driver.findElement(By.xpath("//div[@class='header-logo']//a//img"));
+File sourceFile2 = logo.getScreenshotAs(OutputType.FILE);
+File targetFile2 = new File("C:\\Users\\amit1\\OneDrive\\Desktop\\Java\\TestNG\\src\\test\\java\\Selenium\\Screenshots_Headless_SSL_AdBlock_Extensions\\ScreenShot\\logo.png");
+sourceFile2.renameTo(targetFile2); //Copy sourceFile to TargetFile
+
+
+ChromeOptions
+EdgeOptions
+FirefoxOptions
+etc...........
+
+By options classes We can control browser specific settings.
+
+ChromeOptions
+==============
+1) HeadlessTesting
 
 
 
