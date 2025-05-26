@@ -900,8 +900,7 @@ options.addExtensions(file,file2);
 How to block ads on the page
 ===========================
 uBlock-Origin
-AdBlocker
-
+AdBlocker.
 
 
 
