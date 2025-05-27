@@ -976,6 +976,40 @@ EX-
 
 
 
+Day 40
+========
+Data Driven Testing | Working with MS-Excel
+============================================
+
+Apache POI
+===========
+
+Dependencies :- poi , poi-ooxml
+
+Apache POI Common
+Apache POI API Based On OPC and OOXML Schemas
+
+Excel File ----> WorkBook ------>Sheets------->Rows---->Cells
+
+FileInputStream - reading
+FileOutputStream - writing
+
+
+Classes - provided by Apache POI
+
+XSSFWorkbook  - Workbook
+XSSFSheet     - Sheet
+XSSFRow       - Row
+XSSFCell      - Cell
+
+1) reading data from the excel
+2) writing data in
+ the excel
+
+
+
+
+
 
 
 
