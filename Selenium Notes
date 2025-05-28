@@ -1003,8 +1003,7 @@ XSSFRow       - Row
 XSSFCell      - Cell
 
 1) reading data from the excel
-2) writing data in
- the excel
+2) writing data in the excel
 
 
 
