@@ -18,6 +18,7 @@ import java.time.Duration;
 
 public class OrangeHRMTest {
     WebDriver driver;
+
     @Test(priority = 1)
     public void OpenApp() {
         driver = new ChromeDriver();

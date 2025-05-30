@@ -1021,6 +1021,81 @@ Assignment
 
 https://www.cit.com/cit-bank/resources/calculators/certificate-of-deposit-calculator
 
+Day-42
+=========
+TestNG Integration & Setup | @Test annotation
+===============================================
+
+TestNG -Test New Generation
+
+java based unit testing tool.
+
+Advantages:
+-----
+1) Test cases & test suites
+2) Grouping of test cases.
+3) Prioritize
+4) Parameterization
+5) parallel testing
+6) Reports
+
+TestNG configuration
+-----------------
+1) Install testng in eclipse
+2) add testng library to build path / add testng dependency in pom.xml
+
+
+@Test   - annotation
+
+1) TestNG execute test methods based on alphabetical order.
+2) @Test(priority=num)  controls the order of execution.
+3) Once you provide priorty to the test methods, then order of methods is not considered.
+4) priorities can be random numbers( no need to have consecutive numbers)
+5) If you dont provide priority then default value is Zero (0).
+6) If the priorities are same then again execute methods in alphabetical order.
+7) Negitive values are allowed in priority.
+8)  TestNG execute test methods only if they are having @Test annotation.
+
+execute test cases using testng xml file
+
+test xml file
+------
+1) generate automatically
+2) manually
+
+
+Test suite--->test cases----->test steps
+xml file---->classes----> Test methods
+
+2 things achived through xml
+-------
+1) executed group of test cases as a 1 suite
+2) we can generate testng reports ( default)
+
+
+Example testng.xml
+----------------------
+
+<suite name="All Test Suite">
+    <test name="Test">
+        <classes>
+            <class name="Selenium.Topic16_TestNGIntegrationAndSetupTestAnnotation.OrangeHRMTest">
+                <methods>
+                    <include name="OpenApp"/>
+                    <include name="Logo"/>
+                    <include name="LogiN"/>
+                    <include name="Logout"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
+
+
+
+
+
+
 
 
 
