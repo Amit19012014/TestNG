@@ -1092,13 +1092,44 @@ Example testng.xml
 </suite>
 
 
+TestNG Annotations | Types Of Assertions
 
 
+Day-43
+=========
+TestNG Annotations | Types Of Assertions
+========================================
+@Test
+
+@BeforeMethod
+@AfterMethod
+
+@BeforeClass
+@AfterClass
+
+@BeforeTest
+@AfterTest
+
+@BeforeSuite
+@AfterSuite
 
 
+TC1
+---
+1) Login ----->@BeforeMethod
+2) Search -----> @Test
+3) Logout----->@AfterMethod
+4) Login
+5) Adv Search-----> @Test
+6) Logout
 
 
-
+TC2
+---
+1) Login----->@BeforeClass
+2) Search -----> @Test
+3) Adv Search-----> @Test
+4) Logout----->@AfterClass
 
 
 
