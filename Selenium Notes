@@ -1003,9 +1003,23 @@ XSSFRow       - Row
 XSSFCell      - Cell
 
 1) reading data from the excel
-2) writing data in
- the excel
+2) writing data in the excel
 
+Day 41
+========
+Data Driven Testing with MS-Excel
+=================================
+1) Functionality (Test Case)
+2) Prepare test data in excel
+3) develope automation script
+
+Reading properties file
+---------------------
+xyz.properties
+
+Assignment
+
+https://www.cit.com/cit-bank/resources/calculators/certificate-of-deposit-calculator
 
 
 

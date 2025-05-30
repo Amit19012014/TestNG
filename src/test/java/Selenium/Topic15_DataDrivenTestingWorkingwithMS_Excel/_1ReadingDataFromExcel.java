@@ -6,10 +6,9 @@ import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 
-public class ReadingDataFromExcel {
+public class _1ReadingDataFromExcel {
     public static void main(String[] args) throws IOException {
 
 //        String path = "C:\\Users\\amit1\\OneDrive\\Desktop\\Java\\TestNG\\TestData\\data.xlsx";

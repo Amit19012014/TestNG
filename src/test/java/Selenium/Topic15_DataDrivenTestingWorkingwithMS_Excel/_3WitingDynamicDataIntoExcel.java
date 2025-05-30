@@ -5,12 +5,11 @@ import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class WitingDynamicDataIntoExcel {
+public class _3WitingDynamicDataIntoExcel {
     public static void main(String[] args) throws IOException {
         FileOutputStream file = new FileOutputStream(System.getProperty("user.dir") + "\\TestData\\myFile_Dynamic.xlsx");
         XSSFWorkbook workbook = new XSSFWorkbook();

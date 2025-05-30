@@ -9,7 +9,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 
 //Excel File ----> WorkBook ------>Sheets------->Rows---->Cells
-public class WritingDataInSpecificRowAndCell {
+public class _4WritingDataInSpecificRowAndCell {
     public static void main(String[] args) throws IOException {
 
         FileOutputStream file = new FileOutputStream(System.getProperty("user.dir") + "\\TestData\\myFileRandom.xlsx");

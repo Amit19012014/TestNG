@@ -4,12 +4,11 @@ import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
 //Excel File ----> WorkBook ------>Sheets------->Rows---->Cells
-public class WritingDataInExcel {
+public class _2WritingDataInExcel {
     public static void main(String[] args) throws IOException {
 
         FileOutputStream file = new FileOutputStream(System.getProperty("user.dir") + "\\TestData\\myFile.xlsx");
