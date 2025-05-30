@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/Amit Singh/AquaProjects/TestNG/src/test/java/Selenium/Topic16_TestNGIntegrationAndSetupTestAnnotation/OrangeHRMTest.java">
+        <classes>
+            <class name="Selenium.Topic16_TestNGIntegrationAndSetupTestAnnotation.OrangeHRMTest">
+                <methods>
+                    <include name="OpenApp"/>
+                    <include name="Logo"/>
+                    <include name="LogiN"/>
+                    <include name="Logout"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

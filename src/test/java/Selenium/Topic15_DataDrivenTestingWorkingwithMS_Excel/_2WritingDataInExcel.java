@@ -11,6 +11,7 @@ import java.io.IOException;
 public class _2WritingDataInExcel {
     public static void main(String[] args) throws IOException {
 
+
         FileOutputStream file = new FileOutputStream(System.getProperty("user.dir") + "\\TestData\\myFile.xlsx");
         XSSFWorkbook workbook = new XSSFWorkbook();
         XSSFSheet sheet = workbook.createSheet("Data");
