@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test
+          name="C:/Users/amit1/OneDrive/Desktop/Java/TestNG/src/test/java/Selenium/Topic17_TestNGAnnotationsTypesOfAssertions/day43">
+        <classes>
+            <class name="Selenium.Topic17_TestNGAnnotationsTypesOfAssertions.AllAnnotations">
+                <methods>
+                    <include name="tm1"/>
+                    <include name="tm2"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

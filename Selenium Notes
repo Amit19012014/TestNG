@@ -1135,8 +1135,56 @@ TC2
 
 
 
+<suite name="All Test Suite">
+    <test name="Test1">
+        <classes>
+            <class name="xyz"></class>
+        </classes>
+    </test>
+
+    <test name="Test2">
+        <classes>
+            <class name="abc"></class>
+        </classes>
+    </test>
+</suite>
 
 
+Assertions - Validation points
+-----------------------------
+
+2 Types of Assertions
+--------------------------
+1) Hard Assertions
+2) Soft Assertions
+
+ SoftAssert sa = new SoftAssert();
+ SoftAssert is a class
+ sa.assertEquals(1, 1); //soft assertion
+
+
+
+in hard assertions if assertion got failed after that nothing will be execute.
+in soft assertions if assertion got failed after that all will be execute.
+
+
+
+
+Hard assertions
+----
+we can access from "Assert" class
+methods are static
+* if hard assertion failed then rest of the statements will not be executed.
+
+
+soft assertion
+-------------------
+we can access though "SoftAssert"  object
+
+SoftAssert sa=new SoftAssert();
+sa.assertTrue()
+
+if soft assertion got failed then rest of the statemetns still execute.
 
 
 
