@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="groupingSuit">
+    <test name="groupingTests">
+        <groups>
+            <run>
+                <!--                <include name="Sanity"></include>-->
+                <!--                <include name="Regression"></include>-->
+                <!--                <include name="Functional"></include>-->
+
+                <exclude name="Functional"></exclude>
+            </run>
+        </groups>
+        <classes>
+            <class name="Selenium.Topic18_DependencyMethodGroupingTests.LoginTest"></class>
+            <class name="Selenium.Topic18_DependencyMethodGroupingTests.SignUpTest"></class>
+            <class name="Selenium.Topic18_DependencyMethodGroupingTests.PaymentTest"></class>
+        </classes>
+    </test>
+</suite>
+
+
+
+

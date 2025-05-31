@@ -1,8 +1,7 @@
 Day 21
--------
-
+=======
 Selenium WebDriver
-====================
+========================================================================================================================
 
 1) WebDriver is one of the component in selenium.
 2) webDriver is a java Interface
@@ -12,10 +11,9 @@ WebDriver (I)---->  RemoteWebDriver (C)----> ChromeDriver , FirefoxDriver , Edge
 
 
 Day 22
----------
-
+========
 Locators (ID,Name,LinkText,PartialLinkText,Class&Tag)
-====================================================
+========================================================================================================================
 
 We can identify various elements on the web using Locators
 Locators are addresses that identify a web element uniquely within the page
@@ -65,7 +63,7 @@ findElements(loc) ----> return 0. because List<WebElement> will not find any ele
 Day 23
 ---------
 Locators - CSS Selector
-=======================
+========================================================================================================================
 
 CSS - Cascading Style Sheets
 
@@ -81,7 +79,7 @@ Day 24
 (XML Language)
 
 Locators -  XPath | XPath Functions | XPath
-============================================
+========================================================================================================================
 Xpath is an address of the element
 DOM - Document object model
 
@@ -210,7 +208,7 @@ Example :
 Day 25
 ==========
 Locators - XPath Axes | SelectorsHub
-=====================================
+========================================================================================================================
 
 XPath Axes :
 ------------
@@ -310,7 +308,7 @@ Day 26
 ==========
 
 WebDriver Methods
-==================
+========================================================================================================================
 
 
 
@@ -351,7 +349,7 @@ Day 27
 ======
 
 Wait methods (commands)
-=======================
+========================================================================================================================
 
 Synchronization -
 
@@ -449,7 +447,7 @@ fluent wait
 Day 28
 ==========
 WebDriver Methods | Browser & Navigation Commands
-==================================================
+========================================================================================================================
 
 
 Navigation Commands
@@ -479,9 +477,8 @@ https://testautomation practice.blogspot.com/
 
 Day 29
 ==========
-
-Session 29 - Selenium with Java | Handling Check Boxes, Different Types of Alerts
-===================================================================================
+Selenium with Java | Handling Check Boxes, Different Types of Alerts
+========================================================================================================================
 
 Checkboxes
 
@@ -509,7 +506,7 @@ Day-30
 ========
 
 frames/iframes
-================
+========================================================================================================================
 Syntax:
 driver.switchTo().frame(parameter) - parameter can be id ,name and webElement
 
@@ -545,7 +542,7 @@ driver.switchTo().defaultContent();
 Day 31
 ========
 Handling Different Types of Drop-downs
-======================================
+========================================================================================================================
 
 Dropdown box
 ------------
@@ -597,7 +594,7 @@ colors mult select box
 Day 32
 =========
 Handling Auto-suggest Dropdown & Static Web Tables
-==================================================
+========================================================================================================================
 
 Web Tables
 ------------
@@ -616,7 +613,7 @@ Assignment:
 Day 33
 ==========
 Handling Dynamic Pagination Web Table
-======================================
+========================================================================================================================
 
 How to get no of pages : throw this text
 
@@ -634,7 +631,7 @@ int Pages = Integer.parseInt(s.substring(s.indexOf("(")+1,s.indexOf("Pages")-1))
 Day 34
 ========
 Handling Date Pickers
-=====================
+========================================================================================================================
 
 2022
 
@@ -654,7 +651,7 @@ https://dummy-tickets.com/buyticket
 Day 35
 ========
 Mouse Action || Action vs Actions
-=================================
+========================================================================================================================
 
 
 
@@ -714,7 +711,7 @@ https://testautomationpractice.blogspot.com/
 Day 36
 ========
 Keyboard Actions | Sliders | Tabs & Windows
-==========================================
+========================================================================================================================
 
 
 Slider :
@@ -736,7 +733,7 @@ actions.keyDown(keys.ENTER).KeyUp(keys.ENTER).perform();
 Day 37
 ========
 JavascriptExecutor |Scrolling Pages|Upload Files
-=================================================
+========================================================================================================================
 
 
 JavascriptExecutor
@@ -814,7 +811,7 @@ driver.findElement(By.xpath("//input[@id='filesToUpload']")).sendKeys(file1+"\n"
 Day 38
 ========
 Screenshots, Headless, SSL, Ad Block, Extensions
-=================================================
+========================================================================================================================
 
 How to capture Screenshot
 =========================
@@ -909,8 +906,7 @@ AdBlocker.
 Day 39
 ========
 Handling Broken Links, SVG Elements, Shadow DOM
-=================================================
-
+========================================================================================================================
 Broken Links
 =============
 
@@ -979,7 +975,7 @@ EX-
 Day 40
 ========
 Data Driven Testing | Working with MS-Excel
-============================================
+========================================================================================================================
 
 Apache POI
 ===========
@@ -1008,7 +1004,7 @@ XSSFCell      - Cell
 Day 41
 ========
 Data Driven Testing with MS-Excel
-=================================
+========================================================================================================================
 1) Functionality (Test Case)
 2) Prepare test data in excel
 3) develope automation script
@@ -1024,7 +1020,7 @@ https://www.cit.com/cit-bank/resources/calculators/certificate-of-deposit-calcul
 Day-42
 =========
 TestNG Integration & Setup | @Test annotation
-===============================================
+========================================================================================================================
 
 TestNG -Test New Generation
 
@@ -1098,7 +1094,7 @@ TestNG Annotations | Types Of Assertions
 Day-43
 =========
 TestNG Annotations | Types Of Assertions
-========================================
+========================================================================================================================
 @Test
 
 @BeforeMethod
@@ -1133,8 +1129,6 @@ TC2
 
 
 
-
-
 <suite name="All Test Suite">
     <test name="Test1">
         <classes>
@@ -1163,28 +1157,100 @@ Assertions - Validation points
  sa.assertEquals(1, 1); //soft assertion
 
 
-
 in hard assertions if assertion got failed after that nothing will be execute.
 in soft assertions if assertion got failed after that all will be execute.
 
 
-
-
 Hard assertions
-----
+================
 we can access from "Assert" class
 methods are static
 * if hard assertion failed then rest of the statements will not be executed.
 
 
 soft assertion
--------------------
+==============
 we can access though "SoftAssert"  object
 
 SoftAssert sa=new SoftAssert();
 sa.assertTrue()
 
-if soft assertion got failed then rest of the statemetns still execute.
+if soft assertion got failed then rest of the statements still execute.
+
+
+Day-44
+=========
+TestNG | Dependency Method | Grouping Tests
+========================================================================================================================
+
+Dependency Method :
+-----------------
+
+openApp
+login
+search
+advSearch
+logout
+
+Syntax: dependsOnMethods = {"methodName1","methodName2","methodName3"}
+Ex:
+@Test(priority =4, dependsOnMethods = {"login","search"})
+
+
+Grouping :
+--------------
+
+class1 - m1 m2 m3...
+class2 - m4, m5 ,m6...
+class3 -- m7,m8,m9....
+---
+
+sanity
+regression
+functional
+
+
+loginByFacebook - sanity
+loginByEmail  -sanity
+loginByTwitter  -sanity
+
+signupbyfacebook -regression
+signupbytwitter  -regression
+signupbyemail   - regression
+
+paymentinrupees   - sanity, regression (functional)
+paymentindollars   - sanity, regression  (functional)
+
+1) all sanity tests
+2) all regression tests
+3) all sanity but not regression
+4) all regression but not sanity
+5) all methods which are belongs to both sanity & regression
+
+
+<include name="Sanity"></include>
+<exclude name="Regression"></exclude>
+
+@Test
+----
+priority
+dependsOnMethods
+groups
+etc....
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
