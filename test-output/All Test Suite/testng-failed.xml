@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="FirefoxTest(failed)">
+    <parameter name="browser" value="FIREFOX"/>
+    <parameter name="url" value="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"/>
+    <classes>
+      <class name="Selenium.Topic19_TestNGDataProvidersAndParallelTesting.paramTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="testURL"/>
+          <include name="testLogo"/>
+          <include name="testTitle"/>
+        </methods>
+      </class> <!-- Selenium.Topic19_TestNGDataProvidersAndParallelTesting.paramTest -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+  <test thread-count="5" parallel="tests" name="EdgeTest(failed)">
+    <parameter name="browser" value="edge"/>
+    <parameter name="url" value="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"/>
+    <classes>
+      <class name="Selenium.Topic19_TestNGDataProvidersAndParallelTesting.paramTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="testURL"/>
+          <include name="testLogo"/>
+          <include name="testTitle"/>
+        </methods>
+      </class> <!-- Selenium.Topic19_TestNGDataProvidersAndParallelTesting.paramTest -->
+    </classes>
+  </test> <!-- EdgeTest(failed) -->
+  <test thread-count="5" parallel="tests" name="ChromeTest(failed)">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="url" value="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"/>
+    <classes>
+      <class name="Selenium.Topic19_TestNGDataProvidersAndParallelTesting.paramTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="testURL"/>
+          <include name="testLogo"/>
+          <include name="testTitle"/>
+        </methods>
+      </class> <!-- Selenium.Topic19_TestNGDataProvidersAndParallelTesting.paramTest -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->
