@@ -1238,13 +1238,48 @@ dependsOnMethods
 groups
 etc....
 
+Day-45
+=========
+TestNG | DataProviders | Parallel Testing
+========================================================================================================================
 
+parameterization :
+----------------
 
+1) @DataProvider
+====================
+Syntax of DataProvide :
+-------------------------
+    @DataProvider (name = "dp" , indices = {0,1})
+    Object[][] loginData() {
 
+        Object data[][] = {
+                {"abc@gmail.com", "test123"},
+                {"Amit19012014@gmail.com", "Amit@123"},
+                {"xyz@gmail.com", "test012"},
+                {"john@gmail.com", "test@123"},
+                {"pavanol123@gmail.com", "test@123"},
+                {"johncanedy@gmail.com", "test"}
 
+        };
+        return data;
+    }
 
+indices : it is use for to give a praticular data to the application
 
+Use in @Test Annotation
+@Test(dataProvider = "dp")
 
+2) Using xml file ---> parallel testing
+============================================
+parallel testing using xml file
+------------------------------
+
+step1) created test case
+step 2) create xml file then run test case through xml
+step3 ) passed browser name, url as parameters from xml file to setup() method
+step4 ) execute test case on chrome,firefox & Edge (serial execution)
+step5 ) execute test case on chrome,firefox & edge ( parallel execution)
 
 
 
