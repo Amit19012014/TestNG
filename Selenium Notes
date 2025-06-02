@@ -1339,7 +1339,71 @@ maven dependency
 
 
 
+default void	onFinish(ITestContext context)
+Invoked after all the test methods belonging to the classes inside the <test> tag have run and all their Configuration methods have been called.
 
+default void	onStart(ITestContext context)
+Invoked before running all the test methods belonging to the classes inside the <test> tag and calling all their Configuration methods.
+
+default void	onTestFailedButWithinSuccessPercentage(ITestResult result)
+Invoked each time a method fails but has been annotated with successPercentage and this failure still keeps it within the success percentage requested.
+
+default void	onTestFailedWithTimeout(ITestResult result)
+Invoked each time a test fails due to a timeout.
+
+default void	onTestFailure(ITestResult result)
+Invoked each time a test fails.
+
+default void	onTestSkipped(ITestResult result)
+Invoked each time a test is skipped.
+
+default void	onTestStart(ITestResult result)
+Invoked each time before a test will be invoked.
+
+default void onTestSuccess(ITestResult result)
+Invoked each time a test succeeds.
+
+
+Day-47
+=========
+TestNG | Page Object Model Pattern
+========================================================================================================================
+
+Page Object model - It is a design Pattern. in which we maintain the locators or webelements and test methods.
+
+
+like which describes the way we maintain the locators.
+-----------------
+
+if we not use page object model then we face Two problems -
+-------------------
+Duplication of locators & element
+Updation
+
+
+Test case
+----
+locators
+test methods ----code---validations+Actions
+
+2 approaches to create page object classes
+---------------------------
+1) without using PageFactory
+2) using PageFactory -  PageFactory.initElements(driver, this);
+-----------------
+
+TestCase - Page Object class - Application
+
+WebElement usertxt=driver.findElement(By.xpath("//input[@placeholder='Username']");
+
+
+By loc=By.xpath("//input[@placeholder='Username'];
+driver.findElement(loc).sendKeys("xyz")
+
+
+Constructor
+Locators
+ActionMethod
 
 
 
