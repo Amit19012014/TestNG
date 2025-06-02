@@ -40,6 +40,8 @@ public class Table {
 
             //Read the data from the tables
 
+      
+
             for (int i = 1; i <= rows.size(); i++) {
                 for (int j = 1; j <= columns.size(); j++) {
                     String cellValue = driver.findElement(By.xpath("//table[@class='table table-bordered table-hover']//tbody//tr[" + i + "]//td[" + j + "]")).getText();
