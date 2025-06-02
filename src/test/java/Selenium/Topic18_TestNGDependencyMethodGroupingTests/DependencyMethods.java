@@ -1,4 +1,4 @@
-package Selenium.Topic18_DependencyMethodGroupingTests;
+package Selenium.Topic18_TestNGDependencyMethodGroupingTests;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;

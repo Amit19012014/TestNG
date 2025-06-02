@@ -1,117 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="1" failed="1" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-01T14:51:58 IST" name="All Test Suite" finished-at="2025-06-01T14:52:09 IST" duration-ms="11075">
+  <suite started-at="2025-06-02T22:26:58 IST" name="All Test Suite" finished-at="2025-06-02T22:27:14 IST" duration-ms="15159">
     <groups>
     </groups>
-    <test started-at="2025-06-01T14:51:58 IST" name="EdgeTest" finished-at="2025-06-01T14:52:05 IST" duration-ms="7359">
-      <class name="Selenium.Topic19_TestNGDataProvidersAndParallelTesting.paramTest">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:Selenium.Topic19_TestNGDataProvidersAndParallelTesting.paramTest@2aceadd4]" started-at="2025-06-01T14:51:58 IST" name="setup" finished-at="2025-06-01T14:52:03 IST" duration-ms="5319" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[https://opensource-demo.orangehrmlive.com/web/index.php/auth/login]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2025-06-02T22:26:58 IST" name="Test" finished-at="2025-06-02T22:27:14 IST" duration-ms="15159">
+      <class name="Selenium.Topic20_TestNGListenersExtentReportGeneration.OrangeHRM">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Selenium.Topic20_TestNGListenersExtentReportGeneration.OrangeHRM@c730b35]" started-at="2025-06-02T22:26:59 IST" name="setup" finished-at="2025-06-02T22:27:13 IST" duration-ms="14345" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testLogo()[pri:1, instance:Selenium.Topic19_TestNGDataProvidersAndParallelTesting.paramTest@2aceadd4]" started-at="2025-06-01T14:52:03 IST" name="testLogo" finished-at="2025-06-01T14:52:04 IST" duration-ms="569" status="PASS">
+        <test-method signature="testLogo()[pri:1, instance:Selenium.Topic20_TestNGListenersExtentReportGeneration.OrangeHRM@c730b35]" started-at="2025-06-02T22:27:13 IST" name="testLogo" finished-at="2025-06-02T22:27:13 IST" duration-ms="54" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogo -->
-        <test-method signature="testTitle()[pri:2, instance:Selenium.Topic19_TestNGDataProvidersAndParallelTesting.paramTest@2aceadd4]" started-at="2025-06-01T14:52:04 IST" name="testTitle" finished-at="2025-06-01T14:52:04 IST" duration-ms="16" status="PASS">
+        <test-method signature="testAppUrl()[pri:2, instance:Selenium.Topic20_TestNGListenersExtentReportGeneration.OrangeHRM@c730b35]" started-at="2025-06-02T22:27:13 IST" name="testAppUrl" finished-at="2025-06-02T22:27:13 IST" duration-ms="17" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [https://opensource-demo.orangehrmlive.com/] but found [https://opensource-demo.orangehrmlive.com/web/index.php/auth/login]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [https://opensource-demo.orangehrmlive.com/] but found [https://opensource-demo.orangehrmlive.com/web/index.php/auth/login]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at Selenium.Topic20_TestNGListenersExtentReportGeneration.OrangeHRM.testAppUrl(OrangeHRM.java:40)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testTitle -->
-        <test-method signature="testURL()[pri:3, instance:Selenium.Topic19_TestNGDataProvidersAndParallelTesting.paramTest@2aceadd4]" started-at="2025-06-01T14:52:04 IST" name="testURL" finished-at="2025-06-01T14:52:04 IST" duration-ms="12" status="PASS">
+        </test-method> <!-- testAppUrl -->
+        <test-method signature="testHomePageTitle()[pri:3, instance:Selenium.Topic20_TestNGListenersExtentReportGeneration.OrangeHRM@c730b35]" started-at="2025-06-02T22:27:13 IST" name="testHomePageTitle" finished-at="2025-06-02T22:27:13 IST" depends-on-methods="Selenium.Topic20_TestNGListenersExtentReportGeneration.OrangeHRM.testAppUrl" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method Selenium.Topic20_TestNGListenersExtentReportGeneration.OrangeHRM.testHomePageTitle() on instance Selenium.Topic20_TestNGListenersExtentReportGeneration.OrangeHRM@c730b35 depends on not successfully finished methods 
+[Selenium.Topic20_TestNGListenersExtentReportGeneration.OrangeHRM.testAppUrl() on instance Selenium.Topic20_TestNGListenersExtentReportGeneration.OrangeHRM@c730b35]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method Selenium.Topic20_TestNGListenersExtentReportGeneration.OrangeHRM.testHomePageTitle() on instance Selenium.Topic20_TestNGListenersExtentReportGeneration.OrangeHRM@c730b35 depends on not successfully finished methods 
+[Selenium.Topic20_TestNGListenersExtentReportGeneration.OrangeHRM.testAppUrl() on instance Selenium.Topic20_TestNGListenersExtentReportGeneration.OrangeHRM@c730b35]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testURL -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Selenium.Topic19_TestNGDataProvidersAndParallelTesting.paramTest@2aceadd4]" started-at="2025-06-01T14:52:04 IST" name="tearDown" finished-at="2025-06-01T14:52:05 IST" duration-ms="1380" status="PASS">
+        </test-method> <!-- testHomePageTitle -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Selenium.Topic20_TestNGListenersExtentReportGeneration.OrangeHRM@c730b35]" started-at="2025-06-02T22:27:13 IST" name="tearDown" finished-at="2025-06-02T22:27:14 IST" duration-ms="251" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- Selenium.Topic19_TestNGDataProvidersAndParallelTesting.paramTest -->
-    </test> <!-- EdgeTest -->
-    <test started-at="2025-06-01T14:51:58 IST" name="ChromeTest" finished-at="2025-06-01T14:52:06 IST" duration-ms="7774">
-      <class name="Selenium.Topic19_TestNGDataProvidersAndParallelTesting.paramTest">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:Selenium.Topic19_TestNGDataProvidersAndParallelTesting.paramTest@38425407]" started-at="2025-06-01T14:51:58 IST" name="setup" finished-at="2025-06-01T14:52:05 IST" duration-ms="6801" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[https://opensource-demo.orangehrmlive.com/web/index.php/auth/login]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="testLogo()[pri:1, instance:Selenium.Topic19_TestNGDataProvidersAndParallelTesting.paramTest@38425407]" started-at="2025-06-01T14:52:05 IST" name="testLogo" finished-at="2025-06-01T14:52:06 IST" duration-ms="725" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testLogo -->
-        <test-method signature="testTitle()[pri:2, instance:Selenium.Topic19_TestNGDataProvidersAndParallelTesting.paramTest@38425407]" started-at="2025-06-01T14:52:06 IST" name="testTitle" finished-at="2025-06-01T14:52:06 IST" duration-ms="10" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testTitle -->
-        <test-method signature="testURL()[pri:3, instance:Selenium.Topic19_TestNGDataProvidersAndParallelTesting.paramTest@38425407]" started-at="2025-06-01T14:52:06 IST" name="testURL" finished-at="2025-06-01T14:52:06 IST" duration-ms="8" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testURL -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Selenium.Topic19_TestNGDataProvidersAndParallelTesting.paramTest@38425407]" started-at="2025-06-01T14:52:06 IST" name="tearDown" finished-at="2025-06-01T14:52:06 IST" duration-ms="186" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- Selenium.Topic19_TestNGDataProvidersAndParallelTesting.paramTest -->
-    </test> <!-- ChromeTest -->
-    <test started-at="2025-06-01T14:51:58 IST" name="FirefoxTest" finished-at="2025-06-01T14:52:09 IST" duration-ms="11075">
-      <class name="Selenium.Topic19_TestNGDataProvidersAndParallelTesting.paramTest">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:Selenium.Topic19_TestNGDataProvidersAndParallelTesting.paramTest@3a52dba3]" started-at="2025-06-01T14:51:58 IST" name="setup" finished-at="2025-06-01T14:52:07 IST" duration-ms="9367" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[FIREFOX]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[https://opensource-demo.orangehrmlive.com/web/index.php/auth/login]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="testLogo()[pri:1, instance:Selenium.Topic19_TestNGDataProvidersAndParallelTesting.paramTest@3a52dba3]" started-at="2025-06-01T14:52:07 IST" name="testLogo" finished-at="2025-06-01T14:52:08 IST" duration-ms="563" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testLogo -->
-        <test-method signature="testTitle()[pri:2, instance:Selenium.Topic19_TestNGDataProvidersAndParallelTesting.paramTest@3a52dba3]" started-at="2025-06-01T14:52:08 IST" name="testTitle" finished-at="2025-06-01T14:52:08 IST" duration-ms="4" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testTitle -->
-        <test-method signature="testURL()[pri:3, instance:Selenium.Topic19_TestNGDataProvidersAndParallelTesting.paramTest@3a52dba3]" started-at="2025-06-01T14:52:08 IST" name="testURL" finished-at="2025-06-01T14:52:08 IST" duration-ms="4" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testURL -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Selenium.Topic19_TestNGDataProvidersAndParallelTesting.paramTest@3a52dba3]" started-at="2025-06-01T14:52:08 IST" name="tearDown" finished-at="2025-06-01T14:52:09 IST" duration-ms="1094" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- Selenium.Topic19_TestNGDataProvidersAndParallelTesting.paramTest -->
-    </test> <!-- FirefoxTest -->
+      </class> <!-- Selenium.Topic20_TestNGListenersExtentReportGeneration.OrangeHRM -->
+    </test> <!-- Test -->
   </suite> <!-- All Test Suite -->
 </testng-results>

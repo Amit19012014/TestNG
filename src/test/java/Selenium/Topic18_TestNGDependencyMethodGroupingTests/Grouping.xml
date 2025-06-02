@@ -13,9 +13,9 @@
             </run>
         </groups>
         <classes>
-            <class name="Selenium.Topic18_DependencyMethodGroupingTests.LoginTest"></class>
-            <class name="Selenium.Topic18_DependencyMethodGroupingTests.SignUpTest"></class>
-            <class name="Selenium.Topic18_DependencyMethodGroupingTests.PaymentTest"></class>
+            <class name="Selenium.Topic18_TestNGDependencyMethodGroupingTests.LoginTest"></class>
+            <class name="Selenium.Topic18_TestNGDependencyMethodGroupingTests.SignUpTest"></class>
+            <class name="Selenium.Topic18_TestNGDependencyMethodGroupingTests.PaymentTest"></class>
         </classes>
     </test>
 </suite>

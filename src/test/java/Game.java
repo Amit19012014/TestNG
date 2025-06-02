@@ -2,12 +2,13 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.time.Duration;
 
 public class Game {
     public static void main(String[] args) throws InterruptedException {
-        WebDriver driver = new EdgeDriver();
+        WebDriver driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.get("https://bdgcolor9.com/#/saasLottery/WinGo?gameCode=WinGo_1M&lottery=WinGo");
         driver.manage().window().maximize();
