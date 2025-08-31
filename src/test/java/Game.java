@@ -14,7 +14,7 @@ public class Game {
         driver.manage().window().maximize();
 
         driver.findElement(By.xpath("//input[@name=\"userNumber\"]")).sendKeys("6396578224");
-        driver.findElement(By.xpath("//input[@type=\"password\"]")).sendKeys("Amit975931");
+        driver.findElement(By.xpath("//input[@type=\"password\"]")).sendKeys("0000000");
         driver.findElement(By.xpath("//button[contains(text(),'Log in')]")).click();
 
         Thread.sleep(2000);
